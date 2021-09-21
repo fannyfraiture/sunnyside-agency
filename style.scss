@@ -1,11 +1,76 @@
 @import "_variables";
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
-body {
-    font-family: 'Fraunces', serif;
+  body {
+    font-family: "Fraunces", serif;
     color: $coloreheader;
-    font-weight: 60;
-}
-.header {
+    width: 1440px;
+  }
+  header {
     background-image: url(img/image-header.jpg);
-}
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    height: 1000px;
+    padding: 1,5rem;
+
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 12px;
+
+
+    }
+
+    a {
+      text-decoration: none;
+      img {
+        padding: 30px;
+        width: 190px;
+        height: 35px;
+    }
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    nav {
+        padding-top: 3rem;
+    }
+
+    .button {
+      font-family: "Barlow", sans-serif;
+      display: flex;
+      float: right;
+    align-content: space-between;
+    position: relative;
+    bottom: 85px;
+    right: 50px;
+
+      a {
+        color: $coloreheader;
+        padding: 15px;
+        font-size: 1,5rem;
+        }
+    }
+
+    .bigbutton {
+      background-color: $coloreheader;
+      width: 100px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 35px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      float: right; 
+      position: relative;
+    bottom: 90px;
+    right: 30px;
+      a {
+          color: black;
+      }
+    }
+  }
+

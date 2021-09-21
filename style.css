@@ -1,11 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 body {
-  font-family: 'Fraunces', serif;
+  font-family: "Fraunces", serif;
   color: #FEFFFF;
-  font-weight: 60;
+  width: 1440px;
 }
 
-.header {
+header {
   background-image: url(img/image-header.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 1000px;
+  padding: 1,5rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  letter-spacing: 12px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a img {
+  padding: 30px;
+  width: 190px;
+  height: 35px;
+}
+
+header .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+header nav {
+  padding-top: 3rem;
+}
+
+header .button {
+  font-family: "Barlow", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  position: relative;
+  bottom: 85px;
+  right: 50px;
+}
+
+header .button a {
+  color: #FEFFFF;
+  padding: 15px;
+  font-size: 1,5rem;
+}
+
+header .bigbutton {
+  background-color: #FEFFFF;
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 35px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: right;
+  position: relative;
+  bottom: 90px;
+  right: 30px;
+}
+
+header .bigbutton a {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+@media all and (max-width: 725px) {
+  header nav .nav-menu {
+    visibility: hidden;
+    width: 0;
+  }
+  header nav .burger {
+    display: inline-block;
+  }
+  header nav .burger img {
+    width: 20px;
+  }
+}
+
 main {
   background-color: #FEFBF8;
 }
@@ -44,6 +57,10 @@ header nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2em;
+}
+
+header nav .burger {
+  display: none;
 }
 
 header nav .nav-menu {

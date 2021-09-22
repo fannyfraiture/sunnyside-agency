@@ -1,4 +1,4 @@
-@import "_variables";
+@import "_variables", "_queries";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
 main {
@@ -40,6 +40,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
+
+    .burger {
+        display: none;
+    }
 
     .nav-menu {
         display: flex;

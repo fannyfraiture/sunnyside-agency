@@ -1,22 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
-body {
-  font-family: "Fraunces", serif;
-  color: #FEFFFF;
-  width: 1440px;
-}
-
 header {
   background-image: url(img/image-header.jpg);
   background-size: cover;
   position: relative;
   background-position: center;
   height: 1000px;
-  padding: 1,5rem;
+  padding: 1, 5rem;
+  color: #FEFFFF;
 }
 
 header h1 {
-  font-size: 3.5rem;
-  letter-spacing: 12px;
+  font-family: "Fraunces", serif;
+  font-size: 3.5em;
+  letter-spacing: 0.25em;
+  text-align: center;
+  margin: 3.5em 2em 3em 2em;
 }
 
 header a {
@@ -55,7 +53,7 @@ header .button {
 header .button a {
   color: #FEFFFF;
   padding: 15px;
-  font-size: 1,5rem;
+  font-size: 1, 5rem;
 }
 
 header .bigbutton {
@@ -75,9 +73,56 @@ header .bigbutton {
   position: relative;
   bottom: 90px;
   right: 30px;
+  font-family: "Fraunces", serif;
 }
 
 header .bigbutton a {
   color: black;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+main section article {
+  width: 50%;
+  height: 50%;
+}
+
+.intro {
+  background-color: #FEFBF8;
+}
+
+.intro h2 {
+  font-family: "Fraunces", serif;
+  color: #212F41;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 3.5em 3.5em 1em 3.5em;
+}
+
+.intro p {
+  font-family: "Barlow", sans-serif;
+  color: #7C7D82;
+  text-align: justify;
+  font-size: 18px;
+  margin: 3em 8em 1em 8em;
+}
+
+.intro .pictures_eggs {
+  background-image: url("img/image-transform.jpg");
+  height: 35em;
+  width: 45em;
+}
+
+.intro .pictures_milk {
+  background-image: url("img/image-stand-out.jpg");
+  height: 35em;
+  width: 45em;
 }
 /*# sourceMappingURL=style.css.map */

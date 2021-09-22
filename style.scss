@@ -1,76 +1,118 @@
 @import "_variables";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
-  body {
+header {
+  background-image: url(img/image-header.jpg);
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 1000px;
+  padding: 1, 5rem;
+  color: $coloreheader;
+
+  h1 {
     font-family: "Fraunces", serif;
-    color: $coloreheader;
-    width: 1440px;
+    font-size: 3.5em;
+    letter-spacing: 0.25em;
+    text-align: center;
+    margin: 3.5em 2em 3em 2em;
   }
-  header {
-    background-image: url(img/image-header.jpg);
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    height: 1000px;
-    padding: 1,5rem;
 
-    h1 {
-        font-size: 3.5rem;
-        letter-spacing: 12px;
-
-
+  a {
+    text-decoration: none;
+    img {
+      padding: 30px;
+      width: 190px;
+      height: 35px;
     }
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
 
-    a {
-      text-decoration: none;
-      img {
-        padding: 30px;
-        width: 190px;
-        height: 35px;
-    }
-    }
-    .arrow {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-    }
+  nav {
+    padding-top: 3rem;
+  }
 
-    nav {
-        padding-top: 3rem;
-    }
-
-    .button {
-      font-family: "Barlow", sans-serif;
-      display: flex;
-      float: right;
+  .button {
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    float: right;
     align-content: space-between;
     position: relative;
     bottom: 85px;
     right: 50px;
 
-      a {
-        color: $coloreheader;
-        padding: 15px;
-        font-size: 1,5rem;
-        }
-    }
-
-    .bigbutton {
-      background-color: $coloreheader;
-      width: 100px;
-      padding: 20px;
-      text-align: center;
-      border-radius: 35px;
-      font-weight: 500;
-      display: flex;
-      justify-content: center;
-      float: right; 
-      position: relative;
-    bottom: 90px;
-    right: 30px;
-      a {
-          color: black;
-      }
+    a {
+      color: $coloreheader;
+      padding: 15px;
+      font-size: 1, 5rem;
     }
   }
 
+  .bigbutton {
+    background-color: $coloreheader;
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 35px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    float: right;
+    position: relative;
+    bottom: 90px;
+    right: 30px;
+    font-family: "Fraunces", serif;
+    a {
+      color: black;
+    }
+  }
+}
+
+main {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    article{
+        width: 50%;
+        height: 50%;
+    }
+}
+}
+
+.intro {
+  background-color: $colorwbody;
+
+  h2 {
+    font-family: "Fraunces", serif;
+    color: $colorh2;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 3.5em 3.5em 1em 3.5em;
+  }
+  p {
+    font-family: "Barlow", sans-serif;
+    color: $colortypo;
+    text-align: justify;
+    font-size: 18px;
+    margin: 3em 8em 1em 8em;;
+  }
+
+  .pictures_eggs {
+    background-image: url("img/image-transform.jpg");
+    height: 35em;
+    width: 45em;
+  }
+
+  .pictures_milk {
+    background-image: url("img/image-stand-out.jpg");
+    height: 35em;
+    width: 45em;
+  }
+
+}

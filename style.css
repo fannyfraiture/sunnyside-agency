@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+main {
+  background-color: #FEFBF8;
+}
+
 header {
   background-image: url(img/image-header.jpg);
   background-size: cover;
@@ -22,7 +26,6 @@ header a {
 }
 
 header a img {
-  padding: 30px;
   width: 190px;
   height: 35px;
 }
@@ -34,29 +37,36 @@ header .arrow {
 }
 
 header nav {
-  padding-top: 3rem;
-}
-
-header .button {
-  font-family: "Barlow", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: right;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  position: relative;
-  bottom: 85px;
-  right: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
 }
 
-header .button a {
+header nav .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .button {
+  font-family: "Barlow", sans-serif;
+  margin: 0 1em;
+}
+
+header nav .button a {
   color: #FEFFFF;
   padding: 15px;
   font-size: 1, 5rem;
 }
 
-header .bigbutton {
+header nav .bigbutton {
   background-color: #FEFFFF;
   width: 100px;
   padding: 20px;
@@ -69,33 +79,19 @@ header .bigbutton {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  float: right;
-  position: relative;
-  bottom: 90px;
-  right: 30px;
   font-family: "Fraunces", serif;
-}
-
-header .bigbutton a {
   color: black;
 }
 
-main section {
+.intro {
+  background-color: #FEFBF8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-}
-
-main section article {
-  width: 50%;
-  height: 50%;
-}
-
-.intro {
-  background-color: #FEFBF8;
+  z-index: -2;
 }
 
 .intro h2 {
@@ -108,21 +104,228 @@ main section article {
 
 .intro p {
   font-family: "Barlow", sans-serif;
-  color: #7C7D82;
+  color: #87838C;
   text-align: justify;
   font-size: 18px;
-  margin: 3em 8em 1em 8em;
+  margin: 3em 8em 3.5em 8em;
+  line-height: 1.5;
 }
 
-.intro .pictures_eggs {
+.pictures_eggs {
   background-image: url("img/image-transform.jpg");
-  height: 35em;
-  width: 45em;
 }
 
-.intro .pictures_milk {
+.pictures_milk {
   background-image: url("img/image-stand-out.jpg");
-  height: 35em;
-  width: 45em;
+}
+
+.card {
+  width: 50%;
+  height: 41.5vw;
+}
+
+.card .pink::after {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 10px;
+  background-color: #F8D4CB;
+  left: 140px;
+  bottom: 73px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.card .yellow::after {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 10px;
+  background-color: #FCF5B2;
+  left: 140px;
+  bottom: 73px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.learn {
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  color: #212F41;
+  font-size: 15px;
+  padding: 12em 8em 5em 10em;
+  position: relative;
+  z-index: 1;
+}
+
+.graphicdesign {
+  background-image: url("img/image-graphic-design.jpg");
+  width: 50%;
+  height: 41vw;
+}
+
+.graphicdesign h2 {
+  font-family: "Fraunces", serif;
+  color: #27584D;
+  font-size: 29px;
+  font-weight: 900;
+  margin: 13em 5em 1em 9em;
+}
+
+.graphicdesign p {
+  font-family: "Barlow", sans-serif;
+  color: #27584D;
+  text-align: center;
+  font-size: 18px;
+  margin: 3em 8em 3.5em 10em;
+  line-height: 1.5;
+}
+
+.photography {
+  background-image: url("img/image-photography.jpg");
+  width: 50%;
+  height: 41vw;
+}
+
+.photography h2 {
+  font-family: "Fraunces", serif;
+  color: #1E536E;
+  font-size: 29px;
+  font-weight: 900;
+  margin: 13em 5em 1em 9em;
+}
+
+.photography p {
+  font-family: "Barlow", sans-serif;
+  color: #1E536E;
+  text-align: center;
+  font-size: 18px;
+  margin: 3em 8em 3.5em 10em;
+  line-height: 1.5;
+}
+
+.client .peoples {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.client h2 {
+  font-family: "Fraunces", serif;
+  color: #A7A8AA;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  margin: 8em auto 4em auto;
+  text-align: center;
+}
+
+.client img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 4em;
+}
+
+.client .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client h3 {
+  font-family: "Fraunces", serif;
+  color: #212F41;
+  font-size: 20px;
+  margin: 0 8em 0 8em;
+}
+
+.client p {
+  font-family: "Barlow", sans-serif;
+  color: #B0ADAE;
+  font-size: 15px;
+  text-align: center;
+  margin: 1em 8em 3.5em 8em;
+}
+
+.client q {
+  font-family: "Barlow", sans-serif;
+  color: #6B6B6C;
+  font-size: 18px;
+  text-align: center;
+  margin: 1em 3em 3.5em 3em;
+  line-height: 1.5;
+}
+
+.pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pictures img {
+  width: 25%;
+  height: auto;
+}
+
+footer {
+  background-color: #76D9C7;
+  padding: 5em 0em;
+}
+
+footer .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 12em;
+}
+
+footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2em auto 4em auto;
+  display: flex;
+  width: 350px;
+}
+
+footer .menu a {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  color: #387965;
+}
+
+footer .socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 250px;
 }
 /*# sourceMappingURL=style.css.map */

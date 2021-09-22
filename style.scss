@@ -1,6 +1,10 @@
 @import "_variables";
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
 
+main {
+  background-color: $colorwbody;
+}
+
 header {
   background-image: url(img/image-header.jpg);
   background-size: cover;
@@ -21,7 +25,7 @@ header {
   a {
     text-decoration: none;
     img {
-      padding: 30px;
+     
       width: 190px;
       height: 35px;
     }
@@ -33,60 +37,47 @@ header {
   }
 
   nav {
-    padding-top: 3rem;
-  }
-
-  .button {
-    font-family: "Barlow", sans-serif;
     display: flex;
-    float: right;
-    align-content: space-between;
-    position: relative;
-    bottom: 85px;
-    right: 50px;
+    justify-content: space-between;
+    padding: 2em;
 
-    a {
-      color: $coloreheader;
-      padding: 15px;
-      font-size: 1, 5rem;
+    .nav-menu {
+        display: flex;
+        align-items: center;
     }
-  }
 
-  .bigbutton {
-    background-color: $coloreheader;
-    width: 100px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 35px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    float: right;
-    position: relative;
-    bottom: 90px;
-    right: 30px;
-    font-family: "Fraunces", serif;
-    a {
+    .button {
+      font-family: "Barlow", sans-serif;
+      margin: 0 1em ;
+
+      a {
+        color: $coloreheader;
+        padding: 15px;
+        font-size: 1, 5rem;
+      }
+    }
+
+    .bigbutton {
+      background-color: $coloreheader;
+      width: 100px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 35px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      font-family: "Fraunces", serif;
       color: black;
     }
   }
 }
 
-main {
-  section {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    
-    article{
-        width: 50%;
-        height: 50%;
-    }
-}
-}
-
 .intro {
   background-color: $colorwbody;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  z-index: -2;
 
   h2 {
     font-family: "Fraunces", serif;
@@ -100,19 +91,202 @@ main {
     color: $colortypo;
     text-align: justify;
     font-size: 18px;
-    margin: 3em 8em 1em 8em;;
+    margin: 3em 8em 3.5em 8em;
+    line-height: 1.5;
+  }
+}
+
+.pictures_eggs {
+  background-image: url("img/image-transform.jpg");
+}
+
+.pictures_milk {
+  background-image: url("img/image-stand-out.jpg");
+}
+
+.card {
+  width: 50%;
+  height: 41.5vw;
+
+  .pink::after{
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 10px;
+    background-color: $colorligne2;
+    left: 140px;
+    bottom: 73px;
+    border-radius: 10px;
+    z-index: -1;
   }
 
-  .pictures_eggs {
-    background-image: url("img/image-transform.jpg");
-    height: 35em;
-    width: 45em;
+  .yellow::after{
+    
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 10px;
+    background-color: $colorligne;
+    left: 140px;
+    bottom: 73px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+}
+
+.learn {
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  color: $colorh2;
+  font-size: 15px;
+  padding: 12em 8em 5em 10em;
+  position: relative;
+  z-index: 1;
   }
 
-  .pictures_milk {
-    background-image: url("img/image-stand-out.jpg");
-    height: 35em;
-    width: 45em;
+
+.graphicdesign {
+  background-image: url("img/image-graphic-design.jpg");
+  width: 50%;
+  height: 41vw;
+
+  h2 {
+    font-family: "Fraunces", serif;
+    color: $colortxtg;
+    font-size: 29px;
+    font-weight: 900;
+    margin: 13em 5em 1em 9em;
   }
 
+  p {
+    font-family: "Barlow", sans-serif;
+    color: $colortxtg;
+    text-align: center;
+    font-size: 18px;
+    margin: 3em 8em 3.5em 10em;
+    line-height: 1.5;
+  }
+}
+.photography {
+  background-image: url("img/image-photography.jpg");
+  width: 50%;
+  height: 41vw;
+
+  h2 {
+    font-family: "Fraunces", serif;
+    color: $colortxtpho;
+    font-size: 29px;
+    font-weight: 900;
+    margin: 13em 5em 1em 9em;
+  }
+
+  p {
+    font-family: "Barlow", sans-serif;
+    color: $colortxtpho;
+    text-align: center;
+    font-size: 18px;
+    margin: 3em 8em 3.5em 10em;
+    line-height: 1.5;
+  }
+}
+
+.client {
+  .peoples {
+    display: flex;
+    margin: auto;
+  }
+
+  h2 {
+    font-family: "Fraunces", serif;
+    color: $colorhcli;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    margin: 8em auto 4em auto;
+    text-align: center;
+  }
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 4em;
+  }
+
+  .people {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+
+    flex-direction: column;
+  }
+
+  h3 {
+    font-family: "Fraunces", serif;
+    color: $colorh2;
+    font-size: 20px;
+    margin: 0 8em 0 8em;
+  }
+  p {
+    font-family: "Barlow", sans-serif;
+    color: $colorrolecli;
+    font-size: 15px;
+    text-align: center;
+    margin: 1em 8em 3.5em 8em;
+  }
+
+  q {
+    font-family: "Barlow", sans-serif;
+    color: $colortxtcli;
+    font-size: 18px;
+    text-align: center;
+    margin: 1em 3em 3.5em 3em;
+    line-height: 1.5;
+  }
+}
+
+.pictures {
+  display: flex;
+
+  img {
+    width: 25%;
+    height: auto;
+  }
+}
+
+footer {
+  background-color: $colorwalfooter;
+  padding: 5em 0em;
+
+  .logo {
+    display: flex;
+    margin: 0 auto;
+    width: 12em;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em auto 4em auto;
+    display: flex;
+    width: 350px;
+
+    a {
+      font-family: "Barlow", sans-serif;
+      text-decoration: none;
+      color: $colortxtfooter;
+    }
+  }
+
+  .socialmedia {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    width: 250px;
+  }
 }
